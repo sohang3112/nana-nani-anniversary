@@ -18,10 +18,15 @@ const imageNames = [
 ]
 
 const randGen = randIntGenerator(-25, 25);
+const imageCard = src => `
+    <div class="image-card" style="transform: rotate(${randGen()}deg)">
+        <img src="${src}">
+    </div>
+`
 
 const grid = document.getElementById('image-grid');
 let gridHtml = '';
 for (const img of imageNames) {
-    gridHtml += `<div class="image-card" style="transform: rotate(${randGen()}deg"><img src="img/${img}"></div>`;
+    gridHtml += imageCard("img/" + img);
 }
 grid.innerHTML = gridHtml;
