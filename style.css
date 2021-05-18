@@ -1,0 +1,60 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	padding: 5px;
+	width: 100vw;
+	height: 100vh;
+}
+
+main {
+	display: inline-block;
+	position: relative;
+	border: 3px solid grey;
+	border-radius: 1%;
+	overflow: hidden;
+	background-image: url(img/wood-background.jpg);
+	margin: 5px auto;
+	width: 550px;
+	max-width: 100%;
+}
+
+#image-grid {
+    display: inline-grid;
+    grid-template-columns: repeat(4, 130px);
+    margin: 5px auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+  	transform: translate(-50%, -50%);
+  	z-index: 2;
+  	text-align: center;
+  	font-family: "Times New Roman";
+  	font-style: italic;
+  	font-size: 4rem;
+  	color: white;
+  	-webkit-text-stroke: 1px black;
+}
+
+.image-card {
+	border: 1px solid #aaa;
+	background-color: white;
+	margin: auto;
+	padding: 5px 5px 12px 5px;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.image-card img {
+	border: 2px solid #aaa;
+    max-height: 100%;
+    max-width: 100%;
+}
